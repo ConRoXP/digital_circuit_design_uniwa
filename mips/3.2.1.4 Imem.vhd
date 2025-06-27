@@ -20,9 +20,9 @@ architecture behavioral of Imem is
     5 => x"20630001",  --addi $3, $3, 1
     6 => x"20840001",  --addi $4, $4, 1
     7 => x"20A5FFFF",  --addi $5, $5, -1
-    8 => x"14A0FFFA",  --bne $5, $0, L1
+    8 => x"14A0FFFB",  --bne $5, $0, L1
     others => (others => '0'));
   
   begin
-    instruction <= memory(to_integer(unsigned(address)));
+    instruction <= memory(to_integer(unsigned(address(3 downto 0))));
   end behavioral;

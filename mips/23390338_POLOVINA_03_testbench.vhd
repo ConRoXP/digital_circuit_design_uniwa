@@ -25,8 +25,8 @@ begin
         wait for 3 ns;
         
         reset <= '0';
-        wait for 10000 ns;
-        
+        wait for 100 ns;
+        std.env.stop;
         wait;
       end process;
     end behavior;

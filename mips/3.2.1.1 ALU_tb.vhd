@@ -10,6 +10,7 @@ architecture behavior of ALU_tb is
   signal ALUin2: std_logic_vector(31 downto 0);
   signal ALUctrl: std_logic_vector(3 downto 0);
   signal ALUresult: std_logic_vector(31 downto 0);
+  signal zero: std_logic;
   
 begin
   uut: entity work.ALU
@@ -17,7 +18,8 @@ begin
     ALUin1 => ALUin1,
     ALUin2 => ALUin2,
     ALUctrl => ALUctrl,
-    ALUresult => ALUresult);
+    ALUresult => ALUresult,
+    zero => zero);
     
     process
       begin

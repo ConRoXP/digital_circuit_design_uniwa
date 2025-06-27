@@ -208,7 +208,7 @@ architecture behavioral of MIPS is
       set => MemToReg,
       output => MUXtoRegWrite);
           
-    Branch_isTrue <= Branch AND Zero;
+    Branch_isTrue <= Branch AND (not Zero);
     MUXaddress: Mux32_2to1 port map(
       in0 => AddressNoBranch,
       in1 => AddressBranch,
