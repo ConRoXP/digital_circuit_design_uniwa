@@ -8,7 +8,7 @@ The content of the course includes the following:
 • The study of the various types of memories, designing arithmetic building blocks and circuit design using VHLD.  
 • Methods of controlling the correct functioning of digital systems.  
 
-**Lab**: The lab taught us about the VHDL language. I wrote a few basic VHDL scripts creating simple circuits like flip-flops, adders and decoders, among other things.
+**Lab**: The lab had us work with VHDL. I wrote a few basic VHDL scripts creating simple circuits like flip-flops, adders and decoders, among other things.
 
 # Assignment  
 Designing MIPS in VHDL
