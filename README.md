@@ -11,4 +11,6 @@ The content of the course includes the following:
 **Lab**: The lab had us work with VHDL. I wrote a few basic VHDL scripts creating simple circuits like flip-flops, adders and decoders, among other things.
 
 # Assignment  
-Designing MIPS in VHDL
+Designing (single-cycle) MIPS in VHDL.
+
+<img width="1081" height="769" alt="image" src="https://github.com/user-attachments/assets/70a64787-e1ee-4f88-9a83-e5b1fbf711e9" />
