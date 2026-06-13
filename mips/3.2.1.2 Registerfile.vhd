@@ -5,9 +5,9 @@ use IEEE.NUMERIC_STD.ALL;
 entity Registerfile is port(
 clk: in std_logic;
 reset: in std_logic;
-read_reg1: in std_logic_vector(4 downto 0);
-read_reg2: in std_logic_vector(4 downto 0);
-write_reg: in std_logic_vector(4 downto 0);
+read_reg1: in std_logic_vector(3 downto 0);
+read_reg2: in std_logic_vector(3 downto 0);
+write_reg: in std_logic_vector(3 downto 0);
 write_data: in std_logic_vector(31 downto 0);
 write_enable: in std_logic;
 read_data1: out std_logic_vector(31 downto 0);
