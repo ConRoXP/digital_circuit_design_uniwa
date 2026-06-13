@@ -41,23 +41,23 @@ architecture behavior of Registerfile_tb is
             
             -- 6 -> $4
             write_enable <= '1';
-            write_reg <= "00100";
+            write_reg <= "0100";
             write_data <= std_logic_vector(to_signed(6,32));
             wait for clk_period;
             
             -- 9 -> $5
-            write_reg <= "00101";
+            write_reg <= "0101";
             write_data <= std_logic_vector(to_signed(9,32));
             wait for clk_period;
             
             -- 3 -> $6
-            write_reg <= "00110";
+            write_reg <= "0110";
             write_data <= std_logic_vector(to_signed(3,32));
             wait for clk_period;
             
             write_enable <= '0';
-            read_reg1 <= "00100"; --$4
-            read_reg2 <= "00101"; --$5
+            read_reg1 <= "0100"; --$4
+            read_reg2 <= "0101"; --$5
             wait for clk_period;
             std.env.stop;
                         
