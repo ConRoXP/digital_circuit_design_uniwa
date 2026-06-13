@@ -8,9 +8,9 @@ end Registerfile_tb;
 architecture behavior of Registerfile_tb is
     signal clk: std_logic := '0';
     signal reset: std_logic := '0';
-    signal read_reg1: std_logic_vector(4 downto 0);
-    signal read_reg2: std_logic_vector(4 downto 0);
-    signal write_reg: std_logic_vector(4 downto 0);
+    signal read_reg1: std_logic_vector(3 downto 0);
+    signal read_reg2: std_logic_vector(3 downto 0);
+    signal write_reg: std_logic_vector(3 downto 0);
     signal write_data: std_logic_vector(31 downto 0);
     signal write_enable: std_logic;
     signal read_data1: std_logic_vector(31 downto 0);
