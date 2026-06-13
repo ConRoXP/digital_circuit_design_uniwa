@@ -20,7 +20,7 @@ architecture behavioral of Datamem is
       begin
         if rising_edge(clk) then
           if mem_write = '1' then
-            memory(to_integer(unsigned(address))) <= write_data;
+            memory(to_integer(unsigned(address(3 downto 0)))) <= write_data;
           end if;
         end if;
       end process;
@@ -28,7 +28,9 @@ architecture behavioral of Datamem is
       process(mem_read, address, memory)
         begin
         if mem_read = '1' then
-          read_data <= memory(to_integer(unsigned(address)));
+          read_data <= memory(to_integer(unsigned(address(3 downto 0))));
+        else
+          read_data <= (others => '0');
         end if;
       end process;
     end behavioral;
