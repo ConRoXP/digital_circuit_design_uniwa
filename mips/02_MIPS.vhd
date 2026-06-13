@@ -19,9 +19,9 @@ architecture behavioral of MIPS is
   component Registerfile port(
     clk: in std_logic;
     reset: in std_logic;
-    read_reg1: in std_logic_vector(4 downto 0);
-    read_reg2: in std_logic_vector(4 downto 0);
-    write_reg: in std_logic_vector(4 downto 0);
+    read_reg1: in std_logic_vector(3 downto 0);
+    read_reg2: in std_logic_vector(3 downto 0);
+    write_reg: in std_logic_vector(3 downto 0);
     write_data: in std_logic_vector(31 downto 0);
     write_enable: in std_logic;
     read_data1: out std_logic_vector(31 downto 0);
@@ -108,7 +108,7 @@ architecture behavioral of MIPS is
   signal RegOut1: std_logic_vector(31 downto 0);
   signal RegOut2: std_logic_vector(31 downto 0);
   --MUX
-  signal MUXtoReg: std_logic_vector(4 downto 0);
+  signal MUXtoReg: std_logic_vector(3 downto 0);
   signal MUXtoALU: std_logic_vector(31 downto 0);
   signal MUXtoPC: std_logic_vector(31 downto 0);
   signal MUXtoRegWrite: std_logic_vector(31 downto 0);
@@ -149,8 +149,8 @@ architecture behavioral of MIPS is
       instruction => IMOut);
         
     RegFile: Registerfile port map(
-      read_reg1 => IMOut(25 downto 21),
-      read_reg2 => IMOut(20 downto 16),
+      read_reg1 => IMOut(24 downto 21),
+      read_reg2 => IMOut(19 downto 16),
       write_reg => MUXtoReg,
       write_data => MUXtoRegWrite,
       write_enable => RegWrite,
