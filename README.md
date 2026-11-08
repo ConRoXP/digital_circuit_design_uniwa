@@ -16,6 +16,10 @@ Designing a simplified, single-cycle MIPS implementation in VHDL:
 • 16 data-memory locations, each 32 bits.  
 • 16 instruction-memory locations, each 32 bits.  
 • PC increment of 1, rather than 4.  
-• No requirement for the left-shift-by-2 unit when using word-indexed memories.  
+• No requirement for the left-shift-by-2 unit.  
+
+### Latest revision: 8 Nov 2026 @ 3:35
+I've revisited the code and fixed oversights and errors that had slipped through during the initial implementation.  
+The documentation file has not been updated.  
 
 <img width="1081" height="769" alt="image" src="https://github.com/user-attachments/assets/70a64787-e1ee-4f88-9a83-e5b1fbf711e9" />
