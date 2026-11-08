@@ -35,5 +35,6 @@ architecture behavior of PC_tb is
            wait for clk_period;
            
            wait;
+           std.env.stop;
          end process;
        end behavior;
