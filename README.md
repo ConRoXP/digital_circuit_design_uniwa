@@ -11,6 +11,7 @@ Digital design with emphasis on the design and implementation of integrated digi
 
 # Assignment  
 Designing a simplified, single-cycle MIPS implementation in VHDL:  
+
 • 16 registers, each 32 bits.  
 • 16 data-memory locations, each 32 bits.  
 • 16 instruction-memory locations, each 32 bits.  
